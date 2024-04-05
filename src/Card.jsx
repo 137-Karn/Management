@@ -10,7 +10,7 @@ const uniqueList = [
 function Card() {
   const [search,setSearch] = useState('')
   const [info,setInfo] = useState(data)
-  const [navigate,setNavigate]=useState(uniqueList)
+  const [navigate,]=useState(uniqueList)
   
   const filterItem = (dsg) =>{
     if(dsg==='All'){
