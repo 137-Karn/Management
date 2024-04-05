@@ -66,6 +66,10 @@
 }
 
 @media screen and (max-width: 875px) {
+  body{
+    height: 100%;
+    background-color: #aaa;
+  }
   .cards{
     grid-template-columns: repeat(1,minmax(100px,550px));
   }

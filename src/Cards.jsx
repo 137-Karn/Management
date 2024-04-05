@@ -1,12 +1,12 @@
 import React from 'react'
 
 
-function Cards({cardData,search,setInfo}) {
+function Cards({cardData,search}) {
   return (
     <>
       <div className='cards'>
        {cardData.filter((currElem)=>{ 
-           return search.toLowerCase()===''?currElem:currElem.name.toLowerCase().includes(search)
+           return search===''?currElem:currElem.name.toLowerCase().includes(search.toLowerCase())
        }).map((currElem)=>{
         const {id,name,dsg,Image} = currElem
          return <>

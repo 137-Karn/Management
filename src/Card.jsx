@@ -24,7 +24,7 @@ function Card() {
   return (
     <div>
       <Nav filterItem = {filterItem}  navigate={navigate} setSearch={setSearch}/>
-      <Cards cardData={info} search={search} setInfo={setInfo}/>
+      <Cards cardData={info} search={search}/>
     </div>
   )
 }
